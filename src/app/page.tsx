@@ -1,28 +1,30 @@
 import Image from 'next/image'
 
+import './globals.css';
+
+import trevor from './trevor_damoyi.png';
+
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div id="intro" className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-      <form id="intro_section" > 
-            <Image id="personal_image" src="/trevor_damoyi.jpg" 
-            alt="My Professional Image" width={200} height={200} />
+    <main className="flex-col min-h-screen p-24 justify-center items-center bg-white dark:bg-gray-900 text-gray-800 dark:text-gray-200">
+      <div id="intro" className="z-10 max-w-5xl w-full font-mono text-sm">
+      <form id="intro_section" className='flex gap-4 sm:flex-col md:flex-row lg:flex-row items-center justify-center'> 
+            <Image id="personal_image" src={trevor} className='rounded-full w-5 h-5 sm:w-16 sm:h-16 md:w-32 md:h-32 lg:w-48 lg:h-48' 
+            alt="My Professional Image" width={500} height={500} />
             <div>
-                <h1 id="name">
+                <h1 id="name" className='text-4xl font-mono font-bold text-purple-700 dark:text-purple-400'>
                     Trevor Damoyi
                 </h1>
-            </div>
-            <div>
-                <h2 id="email">
+                <h2 id="email" className='text-2xl font-mono font-semibold text-purple-700 dark:text-purple-400'>
                     trevordamoyi307@gmail.com
                 </h2>
             </div>
         </form>
       </div>
 
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
-        <h3 id="about_me">About Me</h3>
-        <span>
+      <div className="z-10 max-w-5xl w-full font-mono text-sm lg:flex lg:items-center lg:justify-center">
+        <h3 id="about_me" className='font-mono font-semibold text-purple-700 dark:text-purple-400'>About Me</h3>
+        <span className='text-gray-700 dark:text-gray-300'>
             I am a second year Computer Science student based in Johannesburg, South Africa. 
             I am always eager to learn new technologies, as my portfolio will prove.
             Even though Web Development is my main focus, I am also interested in other fields of Software Engineering.
@@ -32,7 +34,7 @@ export default function Home() {
         </span>    
       </div>
 
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
+      <div className="z-10 max-w-5xl w-full font-mono text-sm lg:flex lg:items-center lg:justify-center">
         <div id="projects_section">
           <h4 id="projects_title">Projects</h4>
           <ul id="projects_list">
