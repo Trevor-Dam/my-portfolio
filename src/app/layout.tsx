@@ -2,10 +2,9 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
-import Image from 'next/image'
 
 const inter = Inter({
-  subsets: ["latin"]
+  subsets: ["latin"],
 })
 
 export const metadata: Metadata = {
@@ -37,14 +36,6 @@ export default function RootLayout({
         content="width=device-width, initial-scale=1.0" />
       </head>
       <body className={inter.className}>{children}</body>
-      <footer id="footer">
-        <div id="sm_links">
-            <a id="sm_linkedin" href="skillreactor.io" title="LinkedIn">
-                <Image src="/linkedin.png" alt="My LinkedIn Profile" width={50} height={50}/>
-            </a>
-        </div>
-        
-    </footer>
     </html>
   )
 }
