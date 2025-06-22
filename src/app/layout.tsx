@@ -36,6 +36,9 @@ export default function RootLayout({
         content="width=device-width, initial-scale=1.0" />
       </head>
       <body className={inter.className}>{children}</body>
+      <footer className="text-center p-4 bg-gray-800 text-white">
+        <p>&copy; {new Date().getFullYear()} Trevor Damoyi. All rights reserved.</p>
+      </footer>
     </html>
   )
 }
