@@ -57,7 +57,7 @@ export default function Home() {
 
       <div id='skills_section' className="z-10 w-full font-sans mt-8 items-center flex-col justify-center">
         <h3 id="skills_title" className='text-2xl font-semibold text-purple-700 dark:text-purple-400'>Skills</h3>
-        <ul className='flex-wrap gap-4 p-4 m-5 rounded list-none justify-center flex-row sm:flex-col md:flex-row lg:flex-row'>
+        <ul className='flex-col gap-4 p-4 m-5 rounded list-none justify-center sm:flex-col md:flex-row'>
           <li className='text-base text-gray-700 dark:text-gray-300 border-2 rounded-md border-purple-700 dark:border-purple-400'>
             JavaScript
           </li>
