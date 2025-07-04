@@ -100,6 +100,7 @@ export default function Home() {
               </a>
           </div>
         </div>
+        <br />
         <div id='project_2' className="border-2 border-purple-700 dark:border-purple-400 rounded-2xl shadow-lg bg-white dark:bg-gray-900">
           <div className='p-4 m-5 rounded'>
               <h4 className='text-xl font-semibold text-purple-700 dark:text-purple-400'>Varsity Moola</h4>
@@ -119,13 +120,13 @@ export default function Home() {
         <h3 id="contact_title" className='text-2xl font-semibold text-purple-700 dark:text-purple-400'>Contact Me</h3>
         <form id="contact_form" action={sendEmail} className='flex flex-col gap-4 p-4 m-5 w-full rounded shadow-lg bg-white dark:bg-gray-900'>
           <label htmlFor="name" className='text-base text-gray-700 dark:text-gray-300'>Name</label>
-          <input type="text" id="name" name="name" className='p-2 w-fit border border-purple-700 dark:border-purple-400 rounded-md' placeholder='Name' required />
+          <input type="text" id="name" name="name" className='p-2 w-full border border-purple-700 dark:border-purple-400 rounded-md' placeholder='Name' required />
           
           <label htmlFor="email" className='text-base text-gray-700 dark:text-gray-300'>Email</label>
-          <input type="email" id="email" name="email" className='p-2 w-fit border border-purple-700 dark:border-purple-400 rounded-md' placeholder='email@example.com' required />
+          <input type="email" id="email" name="email" className='p-2 w-full border border-purple-700 dark:border-purple-400 rounded-md' placeholder='email@example.com' required />
           
           <label htmlFor="message" className='text-base text-gray-700 dark:text-gray-300'>Message</label>
-          <textarea id="message" name="message" rows={4} className='p-2 w-fit border border-purple-700 dark:border-purple-400 rounded-md' placeholder='Message' required></textarea>
+          <textarea id="message" name="message" rows={4} className='p-2 w-full border border-purple-700 dark:border-purple-400 rounded-md' placeholder='Message' required></textarea>
           
           <button type="submit" className='bg-purple-700 dark:bg-purple-400 text-white font-semibold py-2 w-fit px-4 rounded-md hover:bg-purple-600 dark:hover:bg-purple-300'>
             Send Message
