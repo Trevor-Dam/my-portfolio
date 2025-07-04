@@ -128,7 +128,7 @@ export default function Home() {
           <label htmlFor="message" className='text-base text-gray-700 dark:text-gray-300'>Message</label>
           <textarea id="message" name="message" rows={4} className='p-2 w-full border border-purple-700 dark:border-purple-400 rounded-md' placeholder='Message' required></textarea>
           
-          <button type="submit" className='bg-purple-700 dark:bg-purple-400 text-white font-semibold py-2 w-fit px-4 rounded-md hover:bg-purple-600 dark:hover:bg-purple-300'>
+          <button type="submit" className='bg-purple-700 dark:bg-purple-400 text-white font-semibold py-2 w-full px-4 rounded-md hover:bg-purple-600 dark:hover:bg-purple-300'>
             Send Message
           </button>
         </form>
