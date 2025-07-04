@@ -23,7 +23,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-      <title>Trevor Damoyi's Webpage</title>
+        <title>Trevor Damoyi's Webpage</title>
         <meta charSet="UTF-8" />
         <meta name="description" 
         content="The personal page of Trevor Damoyi, an aspiring 
@@ -32,8 +32,7 @@ export default function RootLayout({
         <meta name="keywords"
         content="HTML, CSS, JavaScript" />
         <meta name="author" content="Trevor Damoyi" />
-        <meta name="viewport"
-        content="width=device-width, initial-scale=1.0" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </head>
       <body className={inter.className}>{children}</body>
       <footer className="text-center p-4 bg-white dark:bg-gray-900 text-gray-900 dark:text-white">
